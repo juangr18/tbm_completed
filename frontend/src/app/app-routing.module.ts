@@ -12,8 +12,6 @@ import { LoginComponent } from './home/login/login.component';
 import { RegisterComponent } from './home/register/register.component';
 import { AuthGuard } from "./guard/auth.guard";
 
-import { AuthGuard } from './guard/auth.guard';
-
 const routes: Routes = [
   {
     path: '',
@@ -26,20 +24,12 @@ const routes: Routes = [
   {
     path: 'listTask',
     component: ListTaskComponent,
-<<<<<<< HEAD
-    canActivate:[AuthGuard]
-=======
     canActivate: [AuthGuard],
->>>>>>> 476615d02714b70ffd911873d4ba0dd8150044ec
   },
   {
     path: 'saveTask',
     component: SaveTaskComponent,
-<<<<<<< HEAD
-    canActivate:[AuthGuard]
-=======
     canActivate: [AuthGuard],
->>>>>>> 476615d02714b70ffd911873d4ba0dd8150044ec
   },
   {
     path: 'signUp',
@@ -48,56 +38,32 @@ const routes: Routes = [
   {
     path: 'registerUser',
     component: RegisterUserComponent,
-<<<<<<< HEAD
     canActivate:[AuthGuard]
-=======
-    canActivate: [AuthGuard],
->>>>>>> 476615d02714b70ffd911873d4ba0dd8150044ec
   },
   {
     path: 'listUser',
     component: ListUserComponent,
-<<<<<<< HEAD
     canActivate:[AuthGuard]
-=======
-    canActivate: [AuthGuard],
->>>>>>> 476615d02714b70ffd911873d4ba0dd8150044ec
   },
   {
     path: 'updateUser',
     component: UpdateUserComponent,
-<<<<<<< HEAD
     canActivate:[AuthGuard]
-=======
-    canActivate: [AuthGuard],
->>>>>>> 476615d02714b70ffd911873d4ba0dd8150044ec
   },
   {
     path: 'registerRole',
     component: RegisterRoleComponent,
-<<<<<<< HEAD
     canActivate:[AuthGuard]
-=======
-    canActivate: [AuthGuard],
->>>>>>> 476615d02714b70ffd911873d4ba0dd8150044ec
   },
   {
     path: 'listRole',
     component: ListRoleComponent,
-<<<<<<< HEAD
     canActivate:[AuthGuard]
-=======
-    canActivate: [AuthGuard],
->>>>>>> 476615d02714b70ffd911873d4ba0dd8150044ec
   },
   {
     path: 'updateRole',
     component: UpdateRoleComponent,
-<<<<<<< HEAD
     canActivate:[AuthGuard]
-=======
-    canActivate: [AuthGuard],
->>>>>>> 476615d02714b70ffd911873d4ba0dd8150044ec
   },
 ];
 

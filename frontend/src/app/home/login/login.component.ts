@@ -18,10 +18,6 @@ export class LoginComponent implements OnInit {
   horizontalPosition: MatSnackBarHorizontalPosition = 'end';
   verticalPosition: MatSnackBarVerticalPosition = 'top';
   durationInSeconds: number = 2000;
-<<<<<<< HEAD
-=======
-
->>>>>>> 476615d02714b70ffd911873d4ba0dd8150044ec
   constructor(
     private _userService: UserService,
     private _router: Router,
@@ -31,14 +27,7 @@ export class LoginComponent implements OnInit {
   }
 
   login() {
-<<<<<<< HEAD
     if (!this.loginData.email || !this.loginData.password) {
-=======
-    if (
-      !this.loginData.email ||
-      !this.loginData.password
-    ) {
->>>>>>> 476615d02714b70ffd911873d4ba0dd8150044ec
       this.message = 'Incomplete data';
       this.openSnackBarError();
     } else {
@@ -55,10 +44,6 @@ export class LoginComponent implements OnInit {
     }
   }
 
-<<<<<<< HEAD
-=======
- 
->>>>>>> 476615d02714b70ffd911873d4ba0dd8150044ec
   openSnackBarError() {
     this._snackBar.open(this.message, 'X', {
       horizontalPosition: this.horizontalPosition,
