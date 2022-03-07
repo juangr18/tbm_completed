@@ -1,0 +1,42 @@
+<div class="form">
+    <mat-card class="card">
+      <mat-card-title>Register user</mat-card-title>
+      <mat-card-content>
+        <div class="container">
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.name"
+              type="text"
+              matInput
+              placeholder="Name task"
+              required
+            />
+          </mat-form-field>
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.description"
+              type="text"
+              matInput
+              placeholder="Description task"
+              required
+            />
+          </mat-form-field>
+          <mat-form-field>
+            <input
+              [(ngModel)]="registerData.imageUrl"
+              type="text"
+              matInput
+              placeholder="Image Url"
+              required
+            />
+          </mat-form-field>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button (click)="registerTask()" class="button" mat-raised-button>
+          Add task
+        </button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+  
